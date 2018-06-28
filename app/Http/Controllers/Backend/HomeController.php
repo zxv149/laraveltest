@@ -46,7 +46,7 @@ class HomeController extends Controller
 
         $home->content_1 = $request->input('content_1');
         $home->content_2 = $request->input('content_2');
-        if ($fileName) {
+        if (isset($fileName)) {
             $home->image = $fileName;
         }
 
